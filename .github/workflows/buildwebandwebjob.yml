@@ -47,7 +47,7 @@ jobs:
     needs: build
     steps:
     - name: Download webjobandweb artifact from build job
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: webjobandweb
         path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH_WEB }}
